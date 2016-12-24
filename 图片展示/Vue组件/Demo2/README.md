@@ -7,4 +7,4 @@
 ### PC端样式如下
 ![PC](PC.png)  
 ### 移动端样式如下
-![PC](Mobile.png)
+![Mobile](Mobile.png)
