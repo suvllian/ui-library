@@ -95,6 +95,7 @@ export default{
 		height: $height;
 		padding:0px 15px;
 		margin: 0 auto;
+		transition: 1s all ease;
 	}
 
 	.header-nav{
@@ -179,7 +180,6 @@ export default{
 
 				a{
 					display: block;
-					height: 100%;
 					position: relative;   
 				    padding: 1.725rem 1.3rem;
 				    text-decoration: none;
@@ -237,10 +237,11 @@ export default{
 			li{
 				width: 100%;
 				height: 52px;
-				padding:16px 0px;
+				padding:0;
 				transition: 1s all ease;
 				background-color:#fff;
 				border-bottom:2px dotted #eee;
+				overflow: hidden;
 
 				&:hover{
 					transform: translateX(10px);
@@ -251,8 +252,11 @@ export default{
 				}
 
 				a{
-					display: inline;
+					display: inline-block;
 					font-size: 20px;
+					height: 100%;
+					width: 100%;
+					padding:12px 0 0 1.25em;
 				}
 			}
 		}
