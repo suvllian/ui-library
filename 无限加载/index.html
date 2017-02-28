@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>无限加载</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+
+		.container{
+			width: 100%;
+			background-color: #eee;
+		}
+
+		li{
+			height: 50px;
+			background-color: #e0e0e0;
+			margin: 3px;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="items">
+		<ul>
+			<li>item1</li>
+			<li>item2</li>
+			<li>item3</li>
+			<li>item4</li>
+			<li>item5</li>
+			<li>item6</li>
+			<li>item7</li>
+		</ul>
+	</div>
+</div>
+
+<script type="text/javascript">
+	var scrollTop  = 0, containerHeight = 0, scrollHeight = 0,
+		windowHeight = document.documentElement.clientHeight;
+
+	function slideMouse(e){
+		var direction = e.wheelDelta || -e.detail;
+
+		if (direction < 0) {
+			scrollTop  = document.body.scrollTop;
+			blockHeight = document.getElementsByClassName("container")[0].offsetHeight;
+			scrollHeight = blockHeight - windowHeight;
+			if (scrollTop > (scrollHeight - 20) ) {
+				addItem();
+			}
+		}	
+	}
+
+	window.addEventListener("mousewheel",slideMouse);
+	window.addEventListener("DOMMouseScroll",slideMouse);
+
+	var ul = document.getElementsByTagName("ul")[0];
+	var liItems = document.getElementsByTagName("li");
+	var add = ul.innerHTML;
+	function addItem(){
+		ul.innerHTML = ul.innerHTML + add;
+	}
+</script>
+</body>
+</html>
