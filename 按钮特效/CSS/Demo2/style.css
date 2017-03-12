@@ -1,0 +1,86 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+    margine: 0 auto;
+    padding-top: 60px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;
+    font-size: 1.375rem;
+    font-weight: 500;
+    color: #333;
+    background-color: #cff09e;
+}
+
+.btn{
+	display: inline-block;
+	padding: 0.6em 1.1em;
+	text-decoration: none;
+	color: #fff;
+	background-color: #fe4365;
+	border-radius: 3px;
+	font-size: 26px;
+	margin: 15px;
+	outline: none;
+	border:none;
+	transition:box-shadow 0.3s;
+	-webkit-transition:box-shadow 0.3s;
+}
+
+.btn:hover, .btn:focus{
+	box-shadow: 0 0 0 2px #cff09e, 0 0 0 4px #ff0364;
+	transition-timing-function:cubic-bezier(0.6, 4, 0.3, 0.8);
+	animation: gelatine 0.5s 1;
+
+	-webkit-box-shadow: 0 0 0 2px #cff09e, 0 0 0 4px #ff0364;
+	-webkit-transition-timing-function:cubic-bezier(0.6, 4, 0.3, 0.8);
+	-webkit-animation: gelatine 0.5s 1;
+}
+
+@keyframes gelatine {
+	from, to{
+		transform: scale(1, 1);
+		-webkit-transform: scale(1, 1);
+	}
+
+	25% {
+		transform: scale(0.9, 1.1);
+		-webkit-transform: scale(0.9, 1.1);
+	}
+
+	50% {
+		transform: scale(1.1, 0.9);
+		-webkit-transform: scale(1.1, 0.9);
+	}
+
+	75% {
+		transform: scale(0.95, 1.05);
+		-webkit-transform: scale(0.95, 1.05);
+	}
+}
+
+@-webkit-keyframes gelatine {
+	from, to{
+		transform: scale(1, 1);
+		-webkit-transform: scale(1, 1);
+	}
+
+	25% {
+		transform: scale(0.9, 1.1);
+		-webkit-transform: scale(0.9, 1.1);
+	}
+
+	50% {
+		transform: scale(1.1, 0.9);
+		-webkit-transform: scale(1.1, 0.9);
+	}
+
+	75% {
+		transform: scale(0.95, 1.05);
+		-webkit-transform: scale(0.95, 1.05);
+	}
+}
