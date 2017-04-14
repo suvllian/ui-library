@@ -1,0 +1,41 @@
+.waterfall {
+	background-color: #000;
+	color: #fff;
+	position: relative;
+}
+
+.box-contain {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+
+    &::after {
+	    clear: both;
+	    content: "";
+	    display: block;
+	    height: 0;
+	    line-height: 0;
+	}
+}
+
+.pin{
+    width: 33.3%;
+    float: left;
+
+    &:hover{
+	     .box img{
+		    filter: brightness(100%);
+		}
+	}
+}
+
+.box{
+    padding: 20px;
+}
+
+.box img{
+    width:100%;
+    height:auto;
+    filter: brightness(66%);
+    transition: 0.5s all ease;
+}
