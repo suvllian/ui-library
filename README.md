@@ -23,4 +23,8 @@ CSS3多列布局实现瀑布流布局：[demo1](https://github.com/suvllian/ui-l
 CSS33D轮播图：[demo2](https://github.com/suvllian/ui-library/tree/master/%E8%BD%AE%E6%92%AD%E5%9B%BE/Vue%E7%BB%84%E4%BB%B6/demo2)  
 
 ### 返回顶部   
-返回顶部特效：[demo1](https://github.com/suvllian/ui-library/tree/master/%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8/demo1)  
+返回顶部特效：[demo1](https://github.com/suvllian/ui-library/tree/master/%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8/demo1) 
+
+### 小图预览   
+
+### 翻书特效  
